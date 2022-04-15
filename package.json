@@ -1,0 +1,22 @@
+{
+  "name": "search-club-js",
+  "version": "1.0.0",
+  "description": "Just Me Practising Search Algorithms",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/landlight/SearchClubJS.git"
+  },
+  "author": "Chit Khine",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/landlight/SearchClubJS/issues"
+  },
+  "homepage": "https://github.com/landlight/SearchClubJS#readme",
+  "devDependencies": {
+    "typescript": "^4.6.3"
+  }
+}
