@@ -1,5 +1,6 @@
-import linearSearch from "../linearSearch";
 import binarySearch from "../binarySearch";
+import jumpSearch from "../jumpSearch";
+import linearSearch from "../linearSearch";
 import { SearchTypes } from "../types";
 import { testItems, sortedTestItems } from "./testData";
 
@@ -27,7 +28,7 @@ describe(SearchTypes.JUMP_SEARCH, () => {
   test.each(sortedTestItems)(
     `${SearchTypes.JUMP_SEARCH}, in array %p, find %s as argument, returns %e`,
     (firstArg, secondArg, expectedResult) => {
-      const result = binarySearch(firstArg, secondArg);
+      const result = jumpSearch(firstArg, secondArg);
       expect(result).toEqual(expectedResult);
     }
   );

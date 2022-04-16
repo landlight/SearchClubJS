@@ -1,3 +1,5 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 function jumpSearch(inputArray, searchItem) {
     let n = inputArray.length;
     let step = Math.sqrt(n);
@@ -17,4 +19,5 @@ function jumpSearch(inputArray, searchItem) {
         return prev;
     return -1;
 }
+exports.default = jumpSearch;
 //# sourceMappingURL=jumpSearch.js.map

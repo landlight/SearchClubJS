@@ -1,5 +1,3 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 function linearSearch(itemsArr, searchItem) {
     for (let i = 0; i < itemsArr.length; i++) {
         if (itemsArr[i] === searchItem) {
@@ -8,5 +6,4 @@ function linearSearch(itemsArr, searchItem) {
     }
     return -1;
 }
-exports.default = linearSearch;
 //# sourceMappingURL=linearSearch.js.map

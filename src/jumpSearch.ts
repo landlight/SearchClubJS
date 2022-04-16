@@ -1,4 +1,4 @@
-function jumpSearch(inputArray, searchItem)
+export default function jumpSearch(inputArray, searchItem)
 {
   let n = inputArray.length;
   let step = Math.sqrt(n);
@@ -16,7 +16,7 @@ function jumpSearch(inputArray, searchItem)
     if (prev == Math.min(step, n))
       return -1;
   }
-  
+
   if (inputArray[prev] == searchItem)
     return prev;
   
