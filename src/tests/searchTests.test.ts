@@ -1,7 +1,7 @@
 import linearSearch from "../linearSearch";
 import binarySearch from "../binarySearch";
 import { SearchTypes } from "../types";
-import { testItems, binarySearchTestItems } from "./testData";
+import { testItems, sortedTestItems } from "./testData";
 
 describe(SearchTypes.LINEAR_SEARCH, () => {
   test.each(testItems)(
@@ -14,8 +14,18 @@ describe(SearchTypes.LINEAR_SEARCH, () => {
 });
 
 describe(SearchTypes.BINARY_SEARCH, () => {
-  test.each(binarySearchTestItems)(
+  test.each(sortedTestItems)(
     `${SearchTypes.BINARY_SEARCH}, in array %p, find %s as argument, returns %e`,
+    (firstArg, secondArg, expectedResult) => {
+      const result = binarySearch(firstArg, secondArg);
+      expect(result).toEqual(expectedResult);
+    }
+  );
+});
+
+describe(SearchTypes.JUMP_SEARCH, () => {
+  test.each(sortedTestItems)(
+    `${SearchTypes.JUMP_SEARCH}, in array %p, find %s as argument, returns %e`,
     (firstArg, secondArg, expectedResult) => {
       const result = binarySearch(firstArg, secondArg);
       expect(result).toEqual(expectedResult);

@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.binarySearchTestItems = exports.testItems = void 0;
+exports.sortedTestItems = exports.testItems = void 0;
 exports.testItems = [
     [[], 4, -1],
     [[3, 2, 1], 5, -1],
@@ -10,7 +10,7 @@ exports.testItems = [
     [[4, 5, 3, 2, 6, 1], 1, 5]
 ];
 // Binary Search need an array to be sorted
-exports.binarySearchTestItems = [
+exports.sortedTestItems = [
     [[], 4, -1],
     [[3, 2, 1], 5, -1],
     [[1, 2, 3], -2, -1],

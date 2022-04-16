@@ -5,6 +5,7 @@ var SearchTypes;
 (function (SearchTypes) {
     SearchTypes["LINEAR_SEARCH"] = "Linear Search";
     SearchTypes["BINARY_SEARCH"] = "Binary Search";
+    SearchTypes["JUMP_SEARCH"] = "Jump Search";
     SearchTypes["DEFAULT_SEARCH"] = "Default Search";
 })(SearchTypes = exports.SearchTypes || (exports.SearchTypes = {}));
 //# sourceMappingURL=index.js.map

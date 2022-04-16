@@ -1,5 +1,3 @@
-
-
 export const testItems = [
   [[], 4, -1],
   [[3,2,1], 5, -1],
@@ -10,7 +8,7 @@ export const testItems = [
 ]
 
 // Binary Search need an array to be sorted
-export const binarySearchTestItems = [
+export const sortedTestItems = [
   [[], 4, -1],
   [[3,2,1], 5, -1],
   [[1,2,3], -2, -1],
