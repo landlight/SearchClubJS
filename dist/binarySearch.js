@@ -3,13 +3,17 @@ Object.defineProperty(exports, "__esModule", { value: true });
 function binarySearch(itemsArr, searchItem) {
     // Sort the array
     itemsArr.sort();
-    console.log(itemsArr);
     // Get Center of items 
     let min = 0;
     let max = itemsArr.length - 1;
-    while (max > min) {
+    if (max < 0) {
+        return -1;
+    }
+    while (max >= min) {
         let guess = Math.round(min + max / 2);
-        console.log(guess);
+        if ((guess === 0 || guess === itemsArr.length) && itemsArr[guess] !== searchItem) {
+            return -1;
+        }
         if (itemsArr[guess] === searchItem) {
             return guess;
         }

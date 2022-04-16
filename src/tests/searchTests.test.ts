@@ -1,7 +1,7 @@
 import linearSearch from "../linearSearch";
 import binarySearch from "../binarySearch";
 import { SearchTypes } from "../types";
-import { testItems } from "./testData";
+import { testItems, binarySearchTestItems } from "./testData";
 
 describe(SearchTypes.LINEAR_SEARCH, () => {
   test.each(testItems)(
@@ -14,7 +14,7 @@ describe(SearchTypes.LINEAR_SEARCH, () => {
 });
 
 describe(SearchTypes.BINARY_SEARCH, () => {
-  test.each(testItems)(
+  test.each(binarySearchTestItems)(
     `${SearchTypes.BINARY_SEARCH}, in array %p, find %s as argument, returns %e`,
     (firstArg, secondArg, expectedResult) => {
       const result = binarySearch(firstArg, secondArg);

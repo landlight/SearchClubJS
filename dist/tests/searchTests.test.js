@@ -14,7 +14,7 @@ describe(types_1.SearchTypes.LINEAR_SEARCH, () => {
     });
 });
 describe(types_1.SearchTypes.BINARY_SEARCH, () => {
-    test.each(testData_1.testItems)(`${types_1.SearchTypes.BINARY_SEARCH}, in array %p, find %s as argument, returns %e`, (firstArg, secondArg, expectedResult) => {
+    test.each(testData_1.binarySearchTestItems)(`${types_1.SearchTypes.BINARY_SEARCH}, in array %p, find %s as argument, returns %e`, (firstArg, secondArg, expectedResult) => {
         const result = (0, binarySearch_1.default)(firstArg, secondArg);
         expect(result).toEqual(expectedResult);
     });
