@@ -9,7 +9,7 @@ export default function binarySearch(itemsArr, searchItem) {
   }
   while (max >= min) {
     let guess = Math.round((min + max) / 2);  
-        if ((guess === 0 || guess === itemsArr.length) && itemsArr[guess] !== searchItem) {
+    if ((guess === 0 || guess === itemsArr.length) && itemsArr[guess] !== searchItem) {
       return -1;
     }
     if (itemsArr[guess] === searchItem) {
